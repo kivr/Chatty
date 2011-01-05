@@ -16,7 +16,7 @@ $params["timeout"] = 120000;
 $params["skip_proxies"] = array("censor");
 
 $dateFormat = "d/m/Y";
-$channelsFile = "channels.txt";
+$channelsFile = dirname(__FILE__)."/chat/channels.txt";
 if(date($dateFormat) != date($dateFormat, filectime($channelsFile)))
 {
 	$handle = fopen($channelsFile, 'w');
@@ -42,7 +42,7 @@ $chat = new phpFreeChat( $params );
 			#linker td {
 				width:136px;
 				height:28px;
-				background-image:url("tab.png");
+				background-image:url("./chat/tab.png");
 				text-align:center;
 				vertical-align:top;
 			}
@@ -50,12 +50,7 @@ $chat = new phpFreeChat( $params );
 		<title>Chatty</title>
 	</head>
 	<body>
-		<table>
-			<tr>
-				<td><img src="chaty.png" /></td>
-				<td><font face="Arial" color="#3b73b9" size="+3">Chatty</font></td>
-			</tr>
-		</table>
+		<img src="./chat/chatty.png" /></td>
 		<?php $chat->printChat(); ?>
 		<table id="linker" cellspacing="0" cellpadding="0 5 5 5">
 			<tr>
