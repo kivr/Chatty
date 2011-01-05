@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__)."/src/phpfreechat.class.php";
+require_once dirname(__FILE__)."/chat/src/phpfreechat.class.php";
 $params = array();
 $params["title"] = "Kintana Dashboard";
 //$params["nick"] = "guy".rand(1,1000);  // setup the intitial nickname
@@ -50,7 +50,12 @@ $chat = new phpFreeChat( $params );
 		<title>Chatty</title>
 	</head>
 	<body>
-		<img src="chatty.png" />
+		<table>
+			<tr>
+				<td><img src="chaty.png" /></td>
+				<td><font face="Arial" color="#3b73b9" size="+3">Chatty</font></td>
+			</tr>
+		</table>
 		<?php $chat->printChat(); ?>
 		<table id="linker" cellspacing="0" cellpadding="0 5 5 5">
 			<tr>
