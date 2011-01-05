@@ -54,8 +54,8 @@ $chat = new phpFreeChat( $params );
 		<?php $chat->printChat(); ?>
 		<table id="linker" cellspacing="0" cellpadding="0 5 5 5">
 			<tr>
-				<td><a href="../share" target="_blank" class="link">Compartidor</a></td>
-				<td><a href="../proxy" target="_blank" class="link">Proxy</a></td>
+				<td><a href="./share" target="_blank" class="link">Compartidor</a></td>
+				<td><a href="./proxy" target="_blank" class="link">Proxy</a></td>
 			</tr>
 		</table>
 	</body>
