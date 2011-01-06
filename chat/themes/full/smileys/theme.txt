@@ -71,6 +71,8 @@ hammer.png				kristian
 marioso.gif				Mario
 kristian.png				Kristian
 rafita.gif				rafita
+reveicon.gif				reveicon
+r.gif					R
 blush.gif				:-C
 dream.gif				zzz
 eqpmvpm.gif				eqpmvpm
@@ -98,6 +100,7 @@ uy.gif					uyuy
 jupish.gif				cuchupa
 latigo.gif				jupish
 pollo.gif				pollo
+puerco.png				puerco
 rockero.gif				\m/
 hitman.gif				tomala
 guinio.gif				guiño
@@ -122,3 +125,4 @@ cebra.gif				vargasfood
 berrinchitos.gif			berrinchitos
 taco.gif				taco
 putazo.png				putazo
+sale.png				salesale
