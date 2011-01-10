@@ -1,0 +1,18 @@
+body {
+font-family: Verdana,Tahoma,Arial,Helvetica;
+font-size: 10pt;
+color: #000000;
+
+}
+input { color: #666666; font: 8pt verdana; text-decoration: none; background: whitesmoke; border-width: 0.1em; border-style: solid; border-color: gainsboro; }
+p  { font-family: Verdana, Tahoma, Arial, Helvetica; font-size: 8pt; margin-top: 0; margin-bottom: 0 }
+li { font-family: Verdana, Tahoma, Arial, Helvetica; font-size: 8pt; margin-top: 0; margin-bottom: 2 }
+ul { font-family: Verdana, Tahoma, Arial, Helvetica; font-size: 8pt; margin-top: 0; margin-bottom: 2 }
+.pr{ margin-left: 8; margin-right: 8 }
+.Normal{ margin-left: 4; margin-right: 4; color: #FFFFFF; }
+.features{ font-size: 10pt; margin-left: 4; margin-right: 4; color: #FFFFFF; }
+.gris{ margin-left: 5; margin-right: 5; color: #999999; }
+.negro { margin-left: 10; margin-right: 10; color: #000000 }
+a:hover  { text-decoration: none; color: #4060c3 }
+a:link  { text-decoration: none; color: #4060c3 }
+a:visited  { text-decoration: none; color: #4060c3 }

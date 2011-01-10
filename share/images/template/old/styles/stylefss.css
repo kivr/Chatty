@@ -1,0 +1,18 @@
+.fondobarrasuperior {
+	background-image: url(../topban_repeat.jpg);
+}
+.fondobarraazul {
+	background-image: url(../bluebar_back.jpg);
+}
+.fondobarraContenidoIzquierda {
+	background-image: url(../content_leftbar.jpg);
+}
+.fondobarraContenidoDerecha {
+	background-image: url(../content_rightbar.jpg);
+}
+.fondobarraContenidoAbajo {
+	background-image: url(../content_corner_back.jpg);
+}
+body {
+	background-image: url(../back_grey.jpg);
+}

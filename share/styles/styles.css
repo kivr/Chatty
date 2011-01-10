@@ -1,0 +1,216 @@
+body	
+{
+
+}
+
+a	
+{
+font-family : Arial;
+font-size : 9pt;
+font-style : normal;
+text-decoration : underline;
+color : #000099;
+ 
+}
+
+.linkchiquito 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #000066;
+text-decoration: none
+; font-weight: normal
+}
+
+a.linkchiquito 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #000066;
+text-decoration: underline 
+}
+
+a.linkchiquito:hover 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #006699;
+text-decoration: none
+}
+
+td 
+{
+font-family: Arial;
+font-size: 9pt
+}
+
+.titulo 
+{
+font-family: Arial;
+font-size: 15pt;
+font-weight: bold;
+color: #858585;
+font-style: normal
+}
+
+.subtitulo 
+{
+font-family: Arial;
+font-size: 11pt;
+font-style: normal;
+font-weight: bold;
+color: #336666
+}
+
+a 
+{
+font-family: Arial;
+font-size: 9pt;
+color: #003366;
+text-decoration: underline
+}
+
+a:hover 
+{
+font-family: Arial;
+font-size: 9pt;
+color: #990000;
+text-decoration: none
+}
+
+.TituloTabla 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #FFFFFF;
+text-decoration: none ;
+font-weight: normal
+}
+
+.menu 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #000000;
+text-decoration: none ;
+font-weight: bold
+}
+
+a.menu 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #000000;
+text-decoration: none;
+font-weight: bold
+}
+
+a.menu:hover 
+{
+font-family: Arial;
+font-size: 8pt;
+color: #0099CC;
+text-decoration: none
+}
+
+.boton 
+{
+	font-family: Arial;
+	font-size: 8pt;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #CCCCCC;
+	width: 80px;
+	font-weight: lighter;
+}
+
+.cuadrotexto150 
+{
+font-family: Arial;
+font-size: 9pt;
+color: #000033;
+width: 150px
+}
+
+.cuadrotexto300 
+{
+font-family: Arial;
+font-size: 9pt;
+color: #000033;
+width: 300px
+}
+
+.cuadrotexto450 
+{
+font-family: Arial;
+font-size: 9pt;
+color: #000033;
+width: 450px
+}
+
+.fecha 
+{
+font-family: Arial;
+font-size: 9pt;
+color: #FFFFFF;
+font-weight: normal
+}
+
+.footer 
+{
+font-family: Arial;
+font-size: 7pt;
+font-weight: normal;
+color: #000000;
+text-decoration: none
+}
+
+.cuadrotexto100 
+{
+font-family: Arial;
+font-size: 9pt;
+width: 100px
+}
+
+.cuadrotextonosize 
+{
+font-family: Arial;
+font-size: 9pt
+}
+
+.shadow
+{
+filter: progid:DXImageTransform.Microsoft.dropshadow(Color='gray', OffX='5', OffY='5', Positive='true');
+background-color: #FFFFFF;
+border: #000000;
+border-style: solid;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px
+}
+.SubTituloGris {
+
+font-family: Arial;
+font-size: 11pt;
+font-style: normal;
+font-weight: bold;
+color: #999999
+}
+
+a.SubTituloGris {
+
+font-family: Arial;
+font-size: 11pt;
+font-style: normal;
+font-weight: bold;
+color: #999999
+}
+
+a.SubTituloGris:hover {
+
+font-family: Arial;
+font-size: 11pt;
+font-style: normal;
+font-weight: bold;
+color: #99CCFF}
