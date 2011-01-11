@@ -73,6 +73,8 @@ kristian.png				Kristian
 rafita.gif				rafita
 reveicon.gif				reveicon
 r.gif					R
+paconio.gif				paconio
+luisD.gif				luisD
 blush.gif				:-C
 dream.gif				zzz
 eqpmvpm.gif				eqpmvpm
@@ -126,3 +128,5 @@ berrinchitos.gif			berrinchitos
 taco.gif				taco
 putazo.png				putazo
 sale.png				salesale
+android.gif				android
+salud.gif				salud
