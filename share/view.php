@@ -17,7 +17,6 @@ $ext = explode(".", $_GET['file']);
 $ext = strtolower($ext[count($ext) - 1]);
 
 $data = file_get_contents($file);
-echo $data;
 
 if($ext == "png" || $ext == "jpg" || $ext == "gif" || $ext == "jpeg" || $ext == "bmp")
 	$mime = "image/".$ext;
