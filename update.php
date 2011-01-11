@@ -1,4 +1,6 @@
 <?php
+	$ignoreList = array("/share/uploads");
+
 	// function from http://www.php.net/rm_dir - Andreas Kalsch (akidee.de)
 	function deleteDir($dir)
 	{
@@ -31,14 +33,53 @@
 	   return false;
 	}
 
+	function extractIgnored()
+	{
+		global $ignoreList;
+		$root = dirname(__FILE__);
+		
+		foreach($ignoreList as $ignore)
+		{
+			rename($root.$ignore, $root."/".md5($ignore));
+		}
+	}
+
+	function restoreIgnored()
+	{
+		global $ignoreList;
+		$root = dirname(__FILE__);
+		
+		foreach($ignoreList as $ignore)
+		{
+			if(is_dir($root.$ignore))
+				deleteDir($root.$ignore);
+				 
+			rename($root."/".md5($ignore), $root.$ignore);
+		}
+	}
+
+	function isIgnored($entry)
+	{
+		global $ignoreList;
+		foreach($ignoreList as $ignore)
+		{
+			if($entry == md5($ignore))
+				return true;
+		}
+		return false;
+	}
+
 	function clean()
 	{
+		extractIgnored();
+
 		$dir = opendir(dirname(__FILE__));
 		while($entry = readdir($dir))
 		{
 			if($entry != basename(__FILE__)
 				&& $entry != "."
-				&& $entry != ".."){
+				&& $entry != ".."
+				&& !isIgnored($entry)){
 				
 				if(is_dir($entry))
 					deleteDir($entry);
@@ -83,6 +124,8 @@
 				closedir($dir);
 				rmdir($dirName);
 				unlink($zipFile);
+
+				restoreIgnored();
 			}
 			else
 				fail();
