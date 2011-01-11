@@ -19,12 +19,16 @@ $ext = strtolower($ext[count($ext) - 1]);
 $data = file_get_contents($file);
 
 if($ext == "png" || $ext == "jpg" || $ext == "gif" || $ext == "jpeg" || $ext == "bmp")
+{
+	$disposition = "inline";
 	$mime = "image/".$ext;
+}
 else
 {
-	header('Content-Disposition: attachment; filename="'.basename($_GET['file']).'"');
+	$disposition = "attachment";
 	$mime = "application/force-download";
 }
+header('Content-Disposition: '.$disposition.'; filename="'.basename($_GET['file']).'"');
 header("Content-type: ".$mime);
 header("Content-Length: ".filesize($file));
 
