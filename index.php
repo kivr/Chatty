@@ -14,6 +14,7 @@ $params["nickname_colorlist"] = array("#CC0000","#00CC00","#0000CC","#FFCC00",
 $params["showsmileys"] = false;
 $params["timeout"] = 120000;
 $params["skip_proxies"] = array("censor");
+$params["time_offset"] = 3600;
 
 $dateFormat = "d/m/Y";
 $channelsFile = dirname(__FILE__)."/chat/channels.txt";
