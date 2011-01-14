@@ -48,6 +48,7 @@ EmoticonThumbsUp.gif	(yes)
 EmoticonTongue.gif		:-P :P :-p :p
 EmoticonWink.gif		;-) ;)
 finger.gif			.i. .|.
+loldog.gif			LOL
 sock.png				fap
 negrito.png				vargas
 dora.png				pichi
@@ -75,6 +76,7 @@ reveicon.gif				reveicon
 r.gif					R
 paconio.gif				paconio
 luisD.gif				luisD
+diablo.gif				satan
 blush.gif				:-C
 dream.gif				zzz
 eqpmvpm.gif				eqpmvpm
@@ -109,6 +111,7 @@ guinio.gif				guiño
 quotes.gif				comillas
 newmario.gif				newmario
 dk.gif					dk
+sonic.gif				sonic
 explosion.gif				explota
 lennon.png				lennon
 m.gif					.i..i.
@@ -119,6 +122,7 @@ panic2.gif				CorranTodos
 tiro.gif				tiro
 wtf.gif					wtf
 pdm.gif					pdm
+PDM.jpg					PDM
 pumas.png				pumas
 culeros.gif				culeros
 xd.png					xD XD xd Xd
@@ -130,3 +134,7 @@ putazo.png				putazo
 sale.png				salesale
 android.gif				android
 salud.gif				salud
+firefox.gif				firefox
+firefox2.png				Firefox
+paper.gif				baño
+dinero.png				dinero
