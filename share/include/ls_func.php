@@ -19,14 +19,13 @@ function addFileEntry($listFile, $file){
 
 function removeFileEntry($listFile, $file){
 	$list = file($listFile, FILE_IGNORE_NEW_LINES|FILE_SKIP_EMPTY_LINES);
-	$newList = array();
-	foreach($list as $entry)
+	foreach($list as $index => $entry)
 	{
-		if($entry != $file)
-			$newList[] = $entry;
+		if($entry == $file)
+			unset($list[$index]);
 	}
 
-	file_put_contents($listFile, implode("\n", $newList));
+	file_put_contents($listFile, implode("\n", $list)."\n");
 }
 
 function tipo_archivo($archivo,$camino) {

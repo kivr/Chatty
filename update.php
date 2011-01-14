@@ -35,6 +35,8 @@
 
 	function extractIgnored()
 	{
+		if(isset($_GET["cleanall"]))
+			return;
 		global $ignoreList;
 		$root = dirname(__FILE__);
 		
@@ -46,6 +48,8 @@
 
 	function restoreIgnored()
 	{
+		if(isset($_GET["cleanall"]))
+			return;
 		global $ignoreList;
 		$root = dirname(__FILE__);
 		
@@ -60,6 +64,8 @@
 
 	function isIgnored($entry)
 	{
+		if(isset($_GET["cleanall"]))
+			return false;
 		global $ignoreList;
 		foreach($ignoreList as $ignore)
 		{
