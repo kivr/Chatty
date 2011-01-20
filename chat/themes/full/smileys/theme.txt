@@ -138,3 +138,8 @@ firefox.gif				firefox
 firefox2.png				Firefox
 paper.gif				baño
 dinero.png				dinero
+corazones.gif				corazon
+beso.gif				beso
+balls.gif				bolas
+bandera.gif				mexico
+payaso.gif				payaso

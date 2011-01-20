@@ -1,5 +1,12 @@
 <?php
 
+if(!isset($_SERVER['HTTPS']))
+{
+	$redirect = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+	header("Location: $redirect");
+	exit(0);
+}
+
 require_once dirname(__FILE__)."/chat/src/phpfreechat.class.php";
 $params = array();
 $params["title"] = "Kintana Dashboard";
