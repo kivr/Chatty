@@ -50,6 +50,8 @@ EmoticonWink.gif		;-) ;)
 finger.gif			.i. .|.
 loldog.gif			LOL
 sock.png				fap
+halfsock.png				halfap
+nosock.png				nofap
 negrito.png				vargas
 dora.png				pichi
 jesus.png				favila
