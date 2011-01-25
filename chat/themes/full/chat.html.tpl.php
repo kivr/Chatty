@@ -102,7 +102,7 @@
 	
       <div class="pfc_btn">
         <img src="<?php echo $c->getFileUrlFromTheme('smileys/sock.png'); ?>"
-             alt="" title=""
+             alt="Fap&oacute;metro" title="Fap&oacute;metro"
              id="pfc_fapmeter"
              onclick="showFapmeter(event)" />
       </div>

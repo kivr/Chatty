@@ -136,8 +136,8 @@ putazo.png				putazo
 sale.png				salesale
 android.gif				android
 salud.gif				salud
-firefox.gif				firefox
-firefox2.png				Firefox
+firefox.gif				IE
+firefox2.png				firefox
 paper.gif				baño
 dinero.png				dinero
 corazones.gif				corazon
@@ -145,3 +145,8 @@ beso.gif				beso
 balls.gif				bolas
 bandera.gif				mexico
 payaso.gif				payaso
+hipno.gif				hipno
+conejo.gif				conejo
+astro.gif				astro
+hacker.gif				hacker
+prisma.gif				prisma

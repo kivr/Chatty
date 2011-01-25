@@ -112,7 +112,7 @@ function showFapmeter(event)
 			fapmeter.style.display = 'none';
 		}
 		fapmeter.onmousemove = function(event) {
-			setSocks(event.clientX - this.offsetLeft);
+			setSocks(mousePosX(event) - this.offsetLeft);
 		}
 
 		fapmeter.id = 'fapmeter'
