@@ -76,6 +76,24 @@ function pfc_shorten_url($url)
   if (! $c->short_url)
     return $url;
 
+  //Checking if is image
+  if(preg_match('/.*\.(jpg|jpeg|png|gif|bmp)/i', $url))
+    return '<img src="'.$url.'" height="45" />';
+
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_NOBODY, TRUE);
+  curl_exec($ch);
+  if(!curl_errno($ch))
+  {
+    $contentType = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
+    if(preg_match("#^image/#i", $contentType))
+    {
+      curl_close($ch);
+      return '<img src="'.$url.'" height="45" />';
+    }
+  }
+  curl_close($ch);
+
   // Short URL Width
   $shurl_w = $c->short_url_width;
 
