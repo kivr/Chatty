@@ -77,8 +77,11 @@ function pfc_shorten_url($url)
     return $url;
 
   //Checking if is image
+  $imageUrl = base64_encode(substr($url, 4)); //Encode URL for glype proxy
+  $imageUrl = "./proxy/browse.php?u=".$imageUrl;
+  $img = '<img src="'.$imageUrl.'" height="45" />';
   if(preg_match('/.*\.(jpg|jpeg|png|gif|bmp)/i', $url))
-    return '<img src="'.$url.'" height="45" />';
+    return $img;
 
   $ch = curl_init($url);
   curl_setopt($ch, CURLOPT_NOBODY, TRUE);
@@ -89,7 +92,7 @@ function pfc_shorten_url($url)
     if(preg_match("#^image/#i", $contentType))
     {
       curl_close($ch);
-      return '<img src="'.$url.'" height="45" />';
+      return $img;
     }
   }
   curl_close($ch);

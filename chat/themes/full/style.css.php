@@ -35,7 +35,7 @@ div#pfc_channels_content {
   border-right: 1px solid #555;
   border-left: 1px solid #555;
   border-bottom: 1px solid #555;
-  background-color: #FFF;
+  background-color: transparent;
   height: <?php echo ($c->height!=''?$c->height:'300px'); ?>;
 }
 div.pfc_content {
@@ -129,7 +129,7 @@ div.pfc_online {
 /* WARNING: do not fix height in % because it will display blank screens on IE6 */
 /*  height: 100%;*/
   color: #000; /* colors can be overriden by js nickname colorization */
-  background-color: #FFF;
+  background-color: transparent;
 
   /* borders are drawn by this image background */
   background-image: url("<?php echo $c->getFileUrlFromTheme('images/online-separator.gif'); ?>");
@@ -447,4 +447,10 @@ input#pfc_promptbox_cancel {
 div#fapmeter {
   background: white;
   border: 1px solid black;
+}
+div#background {
+  background: white;
+  height: <?php echo ($c->height!=''?$c->height:'300px'); ?>;
+  width: 100%;
+  float: left;
 }

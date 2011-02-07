@@ -5,6 +5,7 @@
 
   <div id="pfc_channels">
     <ul id="pfc_channels_list"></ul>
+    <div id="background" style="opacity:0.85;filter:alpha(opacity=85);"></div>
     <div id="pfc_channels_content"></div>
   </div>
 
