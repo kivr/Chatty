@@ -31,7 +31,7 @@ if(date($dateFormat) != date($dateFormat, filectime($channelsFile)))
 	fclose($handle);
 }
 $channels = file($channelsFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-array_unshift($channels, "Backup");
+array_unshift($channels, "Lobby");
 $params["channels"] = $channels;
 
 $chat = new phpFreeChat( $params );
