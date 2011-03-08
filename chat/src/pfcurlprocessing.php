@@ -81,7 +81,12 @@ function pfc_shorten_url($url)
   $imageUrl = "http://".$_SERVER['SERVER_NAME']
 	.preg_replace("#[^/]*$#", "", $_SERVER['REQUEST_URI'])
 	."proxy/browse.php?u=".$imageUrl;
-  $img = '<img src="'.$imageUrl.'" height="45" />';
+
+  $imgHeight = 45;
+  $sizeArray = getimagesize($url);
+  $imgWidth = $sizeArray[0] * $imgHeight / $sizeArray[1];
+
+  $img = '<img src="'.$imageUrl.'" height="'.$imgHeight.'" width="'.$imgWidth.'" />';
   if(preg_match('/.*\.(jpg|jpeg|png|gif|bmp)/i', $url))
     return $img;
 
