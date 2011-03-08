@@ -78,7 +78,9 @@ function pfc_shorten_url($url)
 
   //Checking if is image
   $imageUrl = base64_encode(substr($url, 4)); //Encode URL for glype proxy
-  $imageUrl = "./proxy/browse.php?u=".$imageUrl;
+  $imageUrl = "http://".$_SERVER['SERVER_NAME']
+	.preg_replace("#[^/]*$#", "", $_SERVER['REQUEST_URI'])
+	."proxy/browse.php?u=".$imageUrl;
   $img = '<img src="'.$imageUrl.'" height="45" />';
   if(preg_match('/.*\.(jpg|jpeg|png|gif|bmp)/i', $url))
     return $img;
