@@ -84,7 +84,7 @@ function pfc_shorten_url($url)
 
   $imgHeight = 45;
   $sizeArray = getimagesize($url);
-  $imgWidth = $sizeArray[0] * $imgHeight / $sizeArray[1];
+  $imgWidth = round($sizeArray[0] * $imgHeight / $sizeArray[1]);
 
   $img = '<img src="'.$imageUrl.'" height="'.$imgHeight.'" width="'.$imgWidth.'" />';
   if(preg_match('/.*\.(jpg|jpeg|png|gif|bmp)/i', $url))
