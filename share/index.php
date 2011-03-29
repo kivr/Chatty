@@ -52,6 +52,11 @@
 <?php require_once('include/config.php'); ?>
 <?php require_once('include/language/'.$LANG.'.php'); ?>
 <?php require_once('include/ls_func.php'); ?>
+
+<?php 
+	ini_set("upload_max_filesize", "200M");
+	ini_set("post_max_size", "200M");
+?>
 <html>
 <link rel="shortcut icon" href="./favicon.ico">
 <link href="images/template/<?php echo $Template ?>/styles/stylefss.css" rel="stylesheet" type="text/css">
