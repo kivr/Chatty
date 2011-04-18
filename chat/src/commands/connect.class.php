@@ -53,6 +53,9 @@ class pfcCommand_connect extends pfcCommand
     // store the customized nick metadata
     foreach($c->nickmeta as $k => $v)
       $ct->setUserMeta($nickid, $k, $v);
+    //store the client type
+    if(isset($params[1]))
+      $ct->setUserMeta($nickid, 'client', $params[1]);
 
     // run the /nick command to assign the user nick
     $cmdp = array();

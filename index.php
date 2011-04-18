@@ -22,6 +22,9 @@ $params["showsmileys"] = false;
 $params["timeout"] = 120000;
 $params["skip_proxies"] = array("censor");
 $params["time_offset"] = 3600;
+$params["nickmeta_private"] = array();
+$params["max_nick_len"] = 20;
+$params["nickmeta"] = array('client'=>'web');
 
 $dateFormat = "d/m/Y";
 $channelsFile = dirname(__FILE__)."/chat/channels.txt";
