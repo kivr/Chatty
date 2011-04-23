@@ -1,11 +1,21 @@
 <?php
 
-/*if(!isset($_SERVER['HTTPS']))
+if(!isset($_SERVER['HTTPS']))
 {
 	$redirect = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 	header("Location: $redirect");
 	exit(0);
-}*/
+}
+
+$authUser = "40e84a23337e950c86b87ecd89827be9";
+$authPw = "5e0b21ac0560a070e8af9880ffdce8da";
+
+if (md5($_SERVER['PHP_AUTH_USER']) != $authUser || md5($_SERVER['PHP_AUTH_PW']) != $authPw) {
+	header('WWW-Authenticate: Basic');
+	header('HTTP/1.0 401 Unauthorized');
+	echo '<h1>Unauthorized</h1>';
+	exit(0);
+}
 
 require_once dirname(__FILE__)."/chat/src/phpfreechat.class.php";
 $params = array();

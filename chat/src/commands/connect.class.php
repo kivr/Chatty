@@ -54,8 +54,7 @@ class pfcCommand_connect extends pfcCommand
     foreach($c->nickmeta as $k => $v)
       $ct->setUserMeta($nickid, $k, $v);
     //store the client type
-    if(isset($params[1]))
-      $ct->setUserMeta($nickid, 'client', $params[1]);
+    $ct->setUserMeta($nickid, 'client', $_SERVER['HTTP_USER_AGENT']);
 
     // run the /nick command to assign the user nick
     $cmdp = array();
