@@ -17,6 +17,7 @@ if (md5($_SERVER['PHP_AUTH_USER']) != $authUser || md5($_SERVER['PHP_AUTH_PW']) 
 	exit(0);
 }
 
+ini_set("date.timezone", "America/Mexico_City");
 require_once dirname(__FILE__)."/chat/src/phpfreechat.class.php";
 $params = array();
 $params["title"] = "Kintana Dashboard";
@@ -31,9 +32,9 @@ $params["nickname_colorlist"] = array("#CC0000","#00CC00","#0000CC","#FFCC00",
 $params["showsmileys"] = false;
 $params["timeout"] = 120000;
 $params["skip_proxies"] = array("censor");
-$params["time_offset"] = 3600;
 $params["nickmeta_private"] = array();
 $params["max_nick_len"] = 20;
+$params["date_format"] = "U";
 $params["nickmeta"] = array('client'=>'web');
 
 $dateFormat = "d/m/Y";

@@ -925,6 +925,13 @@ pfcClient.prototype = {
 */
   },
 
+  pad2: function( number )
+  {
+    if(number<10)
+      return '0' + number;
+    return '' + number;
+  },
+
   handleComingRequest: function( cmds )
   {
     var msg_html = $H();
@@ -943,6 +950,11 @@ pfcClient.prototype = {
       var param       = cmds[mid][6];
       var fromtoday   = cmds[mid][7];
       var oldmsg      = cmds[mid][8];
+
+      //fix Date and Time values for local timezone
+      var fixedDate = new Date(parseInt(date) * 1000);
+      date = fixedDate.getDate() + '\/' + this.pad2(fixedDate.getMonth() + 1) + '\/' + fixedDate.getFullYear();
+      time = this.pad2(fixedDate.getHours()) + ":" + this.pad2(fixedDate.getMinutes()) + ":" + this.pad2(fixedDate.getSeconds());
       
       // format and post message
       var line = '';
