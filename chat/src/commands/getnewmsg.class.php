@@ -92,7 +92,7 @@ class pfcCommand_getnewmsg extends pfcCommand
                     $m_recipientid,
                     $m_cmd,
                     $m_param,
-                    date($c->date_format, time() + $c->time_offset) == $m_date ? 1 : 0, // posted today ?
+                    date('d/m/Y', time() + $c->time_offset) == date('d/m/Y', $d["timestamp"]) ? 1 : 0, // posted today ?
                     $oldmsg ? 1 : 0); // is it a new message in the current session or is it a part of the history
       $data_sent = true;
     }
