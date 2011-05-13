@@ -33,7 +33,7 @@ $params["showsmileys"] = false;
 $params["timeout"] = 120000;
 $params["skip_proxies"] = array("censor");
 $params["nickmeta_private"] = array();
-$params["max_nick_len"] = 20;
+$params["max_nick_len"] = 35;
 $params["date_format"] = "U";
 $params["nickmeta"] = array('client'=>'web');
 
