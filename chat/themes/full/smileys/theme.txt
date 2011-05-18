@@ -5,7 +5,7 @@ leftarrow.png		<= <- <-- <== <<<
 arrow.gif		=> -> --> ==> >>>
 confused.gif		:\ :-\
 cool.gif		8) 8-) B) B-) o-o O-O 0-0
-cry.gif			:'(
+cry.gif			:´(
 dizzy.gif		O_o o_O Oo oO
 eek.gif 		O_O o_o 0.0 O.O o.o
 angry.gif		:angry:
